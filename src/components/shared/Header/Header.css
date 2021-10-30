@@ -1,0 +1,9 @@
+.header-logo img {
+  width: 145px;
+}
+.navbar-nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  color: black;
+}

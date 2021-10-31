@@ -7,3 +7,10 @@
   display: inline-block;
   color: black;
 }
+.clogin button {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 5px 24px;
+  display: block;
+  border-radius: 5px;
+}

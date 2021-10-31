@@ -1,11 +1,13 @@
 import React from "react";
 import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 import logo from "../../images/logo.jpg";
 
 import "./Header.css";
 
 const Header = () => {
+  const { user, logOut } = useAuth();
   return (
     <>
       <Container fluid className="header">
@@ -21,19 +23,36 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse
                   id="basic-navbar-nav"
-                  className="justify-content-evenly"
+                  className="justify-content-between"
                 >
                   <Nav className="">
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/about">About</NavLink>
-                    <NavLink to="/contact-us">Contact Us</NavLink>
-                    <NavLink to="/my-bookings">My Bookings</NavLink>
-                    <NavLink to="/manage-all-bookings">
-                      Manage All Bookings
-                    </NavLink>
-                    <NavLink to="/add-a-new-service">Add a new service</NavLink>
+                    <NavLink to="/contact">Contact Us</NavLink>
+                    {user?.email ? (
+                      <>
+                        <NavLink to="/my-bookings">My Bookings</NavLink>
+                        <NavLink to="/all-bookings">
+                          Manage All Bookings
+                        </NavLink>
+                        <NavLink to="/add-service">Add a new service</NavLink>
+                      </>
+                    ) : (
+                      ""
+                    )}
                   </Nav>
-                  <Nav>login</Nav>
+                  <Nav className="clogin">
+                    {user?.email ? (
+                      <button onClick={logOut}>
+                        {user?.displayName}(Log Out)
+                      </button>
+                    ) : (
+                      <button>
+                        {" "}
+                        <NavLink to="/login">login</NavLink>
+                      </button>
+                    )}
+                  </Nav>
                 </Navbar.Collapse>
               </Container>
             </Navbar>

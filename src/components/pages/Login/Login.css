@@ -1,0 +1,22 @@
+.login button {
+  background: yellow;
+  color: #333;
+  border: none !important;
+  padding: 10px 23px;
+  border-radius: 5px;
+}
+span.error {
+  display: block;
+  background: red;
+  width: 298px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+html,
+body,
+#root,
+.App,
+.cheight,
+.cheight div {
+  height: 100%;
+}

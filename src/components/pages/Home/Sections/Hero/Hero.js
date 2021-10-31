@@ -8,33 +8,22 @@ const Hero = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://img.freepik.com/free-photo/asian-couple-with-suitcase-bag-backpack-going-traveling-with-airplane-background_9083-3297.jpg?size=626&ext=jpg"
+            src="https://i.ibb.co/3dp9JH1/bg1.jpg"
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
+            <h1>Sky Travel is the best solution for traveling the worl</h1>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://img.freepik.com/free-photo/asian-couple-with-suitcase-bag-backpack-going-traveling-with-airplane-background_9083-3297.jpg?size=626&ext=jpg"
+            src="https://i.ibb.co/TB3z53y/bg2.jpg"
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://img.freepik.com/free-photo/asian-couple-with-suitcase-bag-backpack-going-traveling-with-airplane-background_9083-3297.jpg?size=626&ext=jpg"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
+            <h1>One Million People trust us</h1>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
